@@ -1,0 +1,27 @@
+1) Получить код ответа сервера для запроса GET http://adukar.by
+Response
+Response Headers
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.16.1
+Date: Thu, 06 May 2021 15:37:28 GMT
+Content-Type: text/html
+Content-Length: 169
+Connection: keep-alive
+Location: https://adukar.by/
+
+Response Body
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.16.1</center>
+</body>
+</html>
+
+2) Узнать сервер, используемый для сайта https://vk.com
+Server: kittenx
+
+3) На какой адрес перенаправляются GET-запросы к https://google.com?
+https://www.google.com/
+
+
