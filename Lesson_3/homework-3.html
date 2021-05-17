@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Домашнее 3</title>
+</head>
+<body>
+  <header></header>  
+  <main>
+    <form action="http://courses.krajn.by/lesson/3/pizza.php" method="POST">
+      <input type="text" name="firstname" placeholder="Введи имя"/>
+      <input type="text" name="lastname" placeholder="Введи фамилию"/>
+      <input type="text" name="address" placeholder="Введи адрес доставки"/>
+      <p></p>
+      <div>
+        <select name="pizza">
+          <option value="Margarita">Маргарита</option>
+          <option value="Veg">Вегетарианская</option>
+          <option value="Mashrooms">Грибная</option>
+          <option value="Farm">Фермерская</option>
+          <option value="Shrimps">Креветки</option>
+        </select>
+      </div>
+      <p></p>
+      <div>
+        Выбери размер пиццы:<br>
+        <input type="radio" name="size" value="10"/>10 см
+        <input type="radio" name="size" value="20"/>20 см
+        <input type="radio" name="size" value="30"/>30 см
+      </div>
+      <p></p>
+      <div>
+        Выбери способ доставки:<br>
+        <input type="radio" name="delivery" value="delivery"/>Доставка
+        <input type="radio" name="delivery" value="pickup"/>Самовывоз
+      </div>
+      <p></p>
+      <div>
+        Добавить соус?<br>
+        <input type="checkbox" name="sauce"/>Да
+      </div>
+      <p></p>
+      <div>
+        Что-нибудь ещё?<br>
+        <textarea name="comments" cols="30" rows="5"></textarea>
+      </div>
+      <button>Отправить</button>
+    </form>
+  </main>
+  <footer></footer>
+</body>
+</html>
