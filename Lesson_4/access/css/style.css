@@ -1,0 +1,43 @@
+*{
+  color: yellow /*!important; ЗАДАЁТ МАКСИМАЛЬНЫЙ ПРИОРИТЕТ ВСЕМ СТИЛЯМ, но нельзя злоупотреблять*/
+}
+div {
+  background: rgb(170, 201, 49, 0.4);
+  font-weight: 700;
+  font-size: 50px;
+  width: 50vw;
+  height: 70vh;
+  /*background: url(https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg);*/
+}
+.text{
+  width: 90%;
+  text-align: center;
+  font-size: 35px;
+}
+#text{
+  width: 20%;
+  text-align: left;
+  font-size: 15px;
+}
+/*выбор по атрибуту*/
+[type]{
+  color: blue;
+}
+/*все a внутри p, которые лежат внутри класса cat*/
+.cat a{
+  color:cornflowerblue;
+}
+/*все дочерние теги p (только дочерние от родительского .cat) будут окрашены в цвет*/
+.cat>p{
+  background-color: tomato;
+}
+
+/*Типы значений в css:
+число
+размеры
+цвет:rgb/rgba (rgb до 255, a=прозрачность от 0 до 1 т.е. 0 это макс прозрачность), hex (самый популярный)
+важнее то, что ниже, потому что браузер читает css файл сверху вниз
+id вышло из практики
+
++в каких случях используют vw и vh, если можно использовать grid/...?
++вопрос про р внутри р*/
