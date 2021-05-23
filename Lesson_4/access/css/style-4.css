@@ -1,0 +1,33 @@
+.sheet {
+ border: rgb(82, 86, 89) solid;
+ border-right-width: calc(50vw - 280px);
+ border-left-width: calc(50vw - 280px);
+ border-bottom-width: calc(100vh - 767.2px);
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 14px;
+ text-align: center;
+ color: black;
+ line-height: 24px;
+}
+.top{
+ margin-top: 40px;
+}
+.center {
+ margin-top: 190px;
+}
+.bold{
+ font-weight: bold;
+}
+.underline{
+ text-decoration: underline;
+}
+div.side{
+ text-align: left;
+ margin-left: 44%;
+ margin-top: 110px;
+ line-height: normal;
+}
+.bottom{
+ margin-top: 140px;
+ height: 100px;
+}
