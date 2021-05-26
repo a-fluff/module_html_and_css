@@ -1,0 +1,115 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+.wrapper{
+  width: 500px;
+  border: 1px black solid;
+  margin-bottom: 20px;
+}
+.float img{
+  width: 250px;
+  float: left;  /* картинка обтекается слева, смещается из потока */
+  /* float: right; */
+  /*float: none; /*отключает флоат*/
+}
+.float .clear{
+  clear: left; /*запретить параграфу .clear обтекать картинку */
+}
+
+
+/*ПСЕВДОКЛАССЫ*/
+
+.pseudo .visited:visited{
+  color:red;
+}
+/*при переходе ссылка становится красной*/
+.pseudo .link:link{
+  color: gold;
+}
+.pseudo .hover:hover{
+color: chartreuse;
+}
+.form [type=checkbox]:checked ~ .check{
+color: gold;
+}
+.form [type=text]:focus{
+  border: 3px solid green;
+}
+.practic{
+  padding: 20px;
+}
+.practic label{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid green;
+}
+.practic input:checked ~ label{
+  background-color: green;
+}
+.practic input{
+  display: none;
+}
+/* выбрали 1ый элемент указанного класса */
+.elements p:first-child{
+  color: red;
+}
+.elements p:last-child{
+  color: green;
+}
+.elements p:nth-child(3n){
+  color: orange;
+}
+.elements p:only-child{
+  font-size: 20px;;
+}
+/* единственный объект с одним элементом элемент  */
+
+.elements p:not(.paragraph){
+  font-weight: bold;
+}
+/* все элементы, которые не удовлетворяют заданному параметру) */
+
+
+/*ПСЕВДОЭЛЕМЕНТЫ
+например, слайдер/карусель*/
+.pseudo-elements{
+  padding: 30px;
+}
+.after{
+  width: 100px;
+  height: 60px;
+  background-color: green;
+  position: relative;
+}
+.after::after{
+  content: '>';
+  width: 10px;
+  /* height: 10px; */
+  line-height: 1;
+  font-size: 20px;
+  background: gold;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  right: -15px;
+}
+.after::before{
+  content: '<';
+  width: 10px;
+  line-height: 1;
+  font-size: 20px;
+  background: gold;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: -15px;
+}
+.table tr td{
+  text-align: center;
+  vertical-align: center;
+  width: 30px;
+}
+/*inline через атрибут - максимаьный приоритет
+то же самое с important*/
