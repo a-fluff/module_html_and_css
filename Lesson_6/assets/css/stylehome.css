@@ -1,0 +1,6 @@
+p.tip{
+  display: none;
+}
+.check:checked ~ .tip{
+  display: inline;
+}
