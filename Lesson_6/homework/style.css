@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box{
+  position: absolute;
+  width: 300px;
+  height: 600px; 
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -300px;
+}
+div{
+  font-size: 30px;
+}
+.check, .check__yes{
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.text{
+  margin: 10px 0;
+}
+.check__a--wrong{
+  visibility: hidden;
+  position: absolute;
+  margin-left: 40px;
+  top: 147px;
+  background-color: rgb(49, 230, 25);
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+  font-size: 22px;
+}
+.check__a--right{
+  visibility: hidden;
+  position: absolute;
+  margin-left: 40px;
+  top: 147px;
+  background-color: rgb(49, 230, 25);
+  border-radius: 20px;
+  width: 160px;
+  text-align: center;
+  padding: 2px 3px 5px 5px;
+  font-size: 22px;
+}
+.check:checked ~ .check__a--wrong{
+  visibility: visible;
+  }
+.check__yes:checked ~ .check__a--right{
+  visibility: visible;
+}
+.check, .check__yes{
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.text{
+  margin: 10px 0;
+}
+.check__b--wrong{
+  visibility: hidden;
+  position: absolute;
+  margin-left: 40px;
+  top: 297px;
+  background-color: rgb(49, 230, 25);
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+  font-size: 22px;
+}
+.check__b--right{
+  visibility: hidden;
+  position: absolute;
+  margin-left: 40px;
+  top: 297px;
+  background-color: rgb(49, 230, 25);
+  border-radius: 20px;
+  width: 160px;
+  text-align: center;
+  padding: 2px 3px 5px 5px;
+  font-size: 22px;
+}
+.check:checked ~ .check__b--wrong{
+  visibility: visible;
+  }
+.check__yes:checked ~ .check__b--right{
+  visibility: visible;
+}
+.check__c--wrong{
+  visibility: hidden;
+  position: absolute;
+  margin-left: 40px;
+  top: 447px;
+  background-color: rgb(49, 230, 25);
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+  font-size: 22px;
+}
+.check__c--right{
+  visibility: hidden;
+  position: absolute;
+  margin-left: 40px;
+  top: 447px;
+  background-color: rgb(49, 230, 25);
+  border-radius: 20px;
+  width: 160px;
+  text-align: center;
+  padding: 2px 3px 5px 5px;
+  font-size: 22px;
+}
+.check:checked ~ .check__c--wrong{
+  visibility: visible;
+  }
+.check__yes:checked ~ .check__c--right{
+  visibility: visible;
+}
