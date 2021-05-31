@@ -12,7 +12,6 @@
   right: 0;
   position: relative; 
   text-align: center;
-  /* height: 28px; */
 }
 
 .load{
@@ -20,6 +19,6 @@
  background-color: #9999ff; 
  width: 72%;
  height: 100%;
-z-index: -1;
-top: 0;
+ z-index: -1;
+ top: 0;
 }
