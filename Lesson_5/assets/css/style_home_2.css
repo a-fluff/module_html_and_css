@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: url(https://images.squarespace-cdn.com/content/v1/5e61a2adf709a173c3e7c82b/1587092423303-6210905E6I6V04YDOF9D/ke17ZwdGBToddI8pDm48kJr_IgrJng_8BO3hFtkXDOd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTm5KLKmglmQrJ3HgLr6FItTejSvVsrnJzd3KFdstMGnV68V9HhiwqvhWZGXF9DPdyu/Woman+Shirts%2C+Tops.png) no-repeat ;
+  background-size: 100%;
+}
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 1;
+}
+.box{
+  position: fixed;
+  background-color: white;
+  box-sizing: border-box;
+  width: 300px;
+  height: 490px;
+  top: 50%;
+  left: 50%;
+  margin-top: -245px;
+  margin-left: -150px;
+  z-index: 2;
+}
+.title{
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  text-align: center;	
+  font-size: 19px;
+}
+.x{
+  position: absolute;
+  display: inline-block;
+  left: 267px;
+  font-size: 30px;  
+}
+.x:hover{
+  font-weight: bold;
+}
+img{
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 45px;
+}
+.text{
+  position: absolute;
+  top: 338px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 10px;	
+  font-size: 21px;	
+  font-weight: 600;					
+}
+p{
+  margin-top: 10px;
+}
+.add{
+  display: inline-block;
+  margin-top: 10px;
+  background-color:rgb(241,220,227, 0.4);
+  width: 80px;
+  border-radius: 15px;
+  font-weight: 500;
+}
+.add span{
+  display: inline-block;
+  text-align: center;
+  font-size: 21px;
+}
+span:nth-child(2){
+  padding: 0 8px;									
+}
+span:nth-child(2n-1):hover{
+  font-weight: bold;
+}
+div.button{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}			
+button{
+  border-radius: 15px;
+  border: none;
+  padding:  8px 11px;
+  font-size: 18px;
+  font-family:'Courier New', Courier, monospace;
+}
+button:hover{
+  background-color: #f1dce3;
+}
+button:first-child{
+  margin-right: 45px;
+}		
