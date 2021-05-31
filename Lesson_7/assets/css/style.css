@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*.visibility{
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  /* visibility: hidden; */
+  /* opacity: .5;
+  background-color: rgb(255, 99, 71, 0.5);
+  font-size: 30px;
+  overflow: auto; 
+  } */
+.btn{
+  font-size: 30px;
+  font-weight: bold;
+  color: #c7c7c7;
+  border: none;
+  padding: 20px 30px; 
+  background: #444444;
+  border-radius: 10px;
+  margin: 10px;
+}
+.btn--error{
+  background: rgb(255, 0, 0);
+}
