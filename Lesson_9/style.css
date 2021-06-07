@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.parent {
+  width: 800px;
+  height: 600px;
+  border: 2px solid black;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*align-items: stretch; работает, когда не указана высота дочерних блоков */
+  align-items: baseline; /*выравнивает по линии шрифта*/
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* align-content: stretch; */
+
+}
+.child {
+  width: 150px;
+  height: 150px;
+  font-size: 30px;
+}
+.blue {
+  background-color: blue;
+  /* flex-grow: 2; */
+  order: 2;
+}
+.orange {
+  background-color: orange;
+  order: 1;
+}
+.red {
+  background-color: red;
+  order: 3;
+}
