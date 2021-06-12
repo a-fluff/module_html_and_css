@@ -2,7 +2,6 @@
 *{
   box-sizing: border-box;
   color: #FFFFFF;
-  text-decoration: none;
 }
 html, body{
   font-family: 'Roboto', sans-serif;
@@ -43,6 +42,7 @@ header, main, footer{
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+  text-decoration: none;
 }
 .btn {
   font-weight: 400;
@@ -89,7 +89,7 @@ header, main, footer{
 
 .timer__count {
   font-weight: bold;
-  font-size: 64px;
+  font-size: 36px;
   line-height: 140%;
   text-align: center;
 }
@@ -117,13 +117,13 @@ header, main, footer{
     position: fixed;
     top: 0;
     left: -200px;
+    background: #121212;
     transition: 1s;
   }
   .menu__list{
     height: 100vh;
     flex-direction: column;
     justify-content: space-evenly;
-    background: #121212;
     padding-left: 20px;
   }
   .menu__item:not(:last-child){
