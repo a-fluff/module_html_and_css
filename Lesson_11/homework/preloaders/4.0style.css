@@ -1,0 +1,59 @@
+body {
+  background-color:tomato;
+}
+.center {
+  width : 60px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: calc(50vh - 30px);
+  animation: center 1s infinite;
+}
+.circles {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.circles:nth-child(2n) {
+  margin-right: 0px;
+}
+.circle-one {
+  animation: circle-one 1s infinite;
+}
+.circle-two {
+  animation: circle-two 1s infinite;
+}
+.circle-three {
+  animation: circle-three 1s infinite;
+}
+.circle-four {
+  animation: circle-four 1s infinite;
+}
+@keyframes center {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+@keyframes circle-one {
+  0% {transform: translate(0,0);}
+  50% {transform: translate(20px,20px);}
+  100% {transform: translate(0,0);}
+}
+@keyframes circle-two{
+  0% {transform: translate(0,0);}
+  50% {transform: translate(-20px,20px);}
+  100% {transform: translate(0,0);}
+}
+@keyframes circle-three {
+  0% {transform: translate(0,0);}
+  50% {transform: translate(20px,-20px);}
+  100% {transform: translate(0,0);}
+}
+@keyframes circle-four {
+  0% {transform: translate(0,0);}
+  50% {transform: translate(-20px,-20px);}
+  100% {transform: translate(0,0);}
+}

@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.preloader{
+  border: 5px solid rgba(150, 226, 240, 0.37) ;
+  border-left-color: rgba(0, 217, 255, 0.7);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: preloader 1.5s linear infinite;
+  margin: auto;
+  margin-top: calc(50vh - 50px);
+}
+
+@keyframes preloader {
+  100% { transform: rotate(360deg);}
+}
